@@ -73,17 +73,17 @@ Calculates accuracy based on a given sample
 Options:
 ```json
 {
-	"set": "Array of testing examples",
-	"labels": "Array of labels for outputs",
-	"log": "Boolean, enable or disable debug logs"
+  "set": "Array of testing examples",
+  "labels": "Array of labels for outputs",
+  "log": "Boolean, enable or disable debug logs"
 }
 ```
 
 Training example should look like:
 ```json
 {
-	"inputs": "Array of input values for each input neuron",
-	"label": "Target result label"
+  "inputs": "Array of input values for each input neuron",
+  "label": "Target result label"
 }
 ```
 
