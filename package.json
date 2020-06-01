@@ -1,0 +1,16 @@
+{
+  "name": "lab-3",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "csv-parse": "^4.10.1",
+    "node-matrix": "^1.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "node ./src"
+  },
+  "author": "",
+  "license": "MIT"
+}
