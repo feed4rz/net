@@ -87,6 +87,21 @@ class Net {
 		}
 	}
 
+	// Used to initialize a weight
+	_randomValue(neurons) {
+		const spread = Math.pow(neurons, -.5)
+		return Math.random() * 3 * spread - spread
+	}
+
+	static sigmoid(x) {
+		return 1 / (1 + Math.pow(Math.E, -x))
+	}
+
+	// Sigmoid for activation
+	_activate(x) {
+		return Net.sigmoid(x)
+	}
+
 	/*
 		Feed-forward algorithm
 
@@ -340,21 +355,6 @@ class Net {
 			probability: Math.floor(maxValue * 1000000) / 10000,
 			prediction: maxLabel
 		}
-	}
-
-	// Used to initialize a weight
-	_randomValue(neurons) {
-		const spread = Math.pow(neurons, -.5)
-		return Math.random() * 3 * spread - spread
-	}
-
-	static sigmoid(x) {
-		return 1 / (1 + Math.pow(Math.E, -x))
-	}
-
-	// Sigmoid for activation
-	_activate(x) {
-		return Net.sigmoid(x)
 	}
 }
 
